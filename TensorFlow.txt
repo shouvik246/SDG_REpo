@@ -1,0 +1,7 @@
+TensorFlow
+
+1: what are variables
+2: what are place holder
+3: Tensor (dtype=,shape=,name=)
+4: session
+5: feed dictonary
