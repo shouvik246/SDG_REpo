@@ -1,0 +1,87 @@
+ <html>
+    <head>
+        <title>
+            Poping a alert box
+        </title>
+        <style>
+
+            body {
+                background-color: #FFC300;
+            }
+            
+            #Name{
+                
+                position: absolute;
+                top:50%;
+                left:50%;
+                padding: 40px;
+                width: 300px;
+                height: 300px;
+                transform: translate(-50%,-50%);
+                background: red;
+            }
+
+            #Name input[type="text"]{
+        
+
+                width: 200px;
+                height: 40px;
+                margin: 20px auto;
+              background: #DAF7A6;
+              color:#900C3F;
+              border-radius: 20px;
+              border-color: #FF5733;
+              border-width: medium;
+              display: block;
+            }
+
+            #Name input[type="button"]{
+              
+              width: 60px;
+                height: 40px;
+                margin: 20px auto;
+            
+              text-align: center;
+              background: #DAF7A6;
+              border-radius: 15px;
+              border-color: #FF5733;
+                display: block;
+            }
+            #Name>h1{
+
+                font-family: ConSolas;
+                font-size: 30px;
+                color: black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+                
+        
+        
+        
+        <script type="text/javascript">
+
+            function alert_gen() {
+                var str = document.getElementById("U_name").value;
+
+                if(str.length < 1)
+                {
+                  alert("Name can't be empty");
+                }
+                else {
+                  alert("Hello " + str);
+                }
+            }
+
+        </script>
+
+            <div id = "Name">
+                <h1> System Login </h1>
+                <input type="text" placeholder="Enter Name" id="U_name"></br></br>
+                <input type="button" onclick="alert_gen()" id="alert" value="Alert">
+            </div>
+
+    </body>
+</html>
